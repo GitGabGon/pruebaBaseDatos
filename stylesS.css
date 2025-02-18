@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 167, 90);
+}
+
+ul {
+    position:absolute;
+    top: 20px;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 97, 74);
+    overflow: hidden;
+    border: 3px solid rgba(135, 57, 57, 0.397);
+    box-sizing: border-box;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    padding: 8px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    margin: 2px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(246, 132, 115);
+    border-radius: 5px;
+}
+
+#contenedorPadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.contenedorHijo {
+    margin: 20px 20px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(123, 237, 220, 0.986);
+    box-shadow: 0 0 10px ;    
+}
+
+.contenedorHijo:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+    background-color: rgba(127, 239, 125, 0.986);
+}
+
+img {
+    height: 20vh;
+    width: auto;
+    border-radius: 4px;
+    
+}
+
+#contenedorGrande {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(27, 27, 27, 0.9);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition-property: display;
+    transition-duration: 3s;
+}
+
+#imagenGrande {
+    height: 50vh;
+    width: auto;
+    
+
+}
+
+#botonCerrar {
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(114, 114, 114);
+    border: 3px solid black;
+    border-radius: 100px;    
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#botonCerrar:hover {
+    background-color: rgb(226, 226, 226);
+} 
+
+#precio {
+    bottom: 100px;
+    border-radius: 20px;
+    background-color: azure;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-self: center;
+    border: 3px solid black;
+}
+
+#precio:hover {
+    background-color: rgb(226, 190, 190);
+    
+}
